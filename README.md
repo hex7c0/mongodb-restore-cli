@@ -1,7 +1,7 @@
 # [mongodb-restore-cli](http://supergiovane.tk/#/mongodb-restore-cli)
 
-[![NPM version](https://badge.fury.io/js/mongodb-restore-cli.svg)](http://badge.fury.io/js/mongodb-restore-cli)
-[![Dependency Status](https://david-dm.org/hex7c0/mongodb-restore-cli/status.svg)](https://david-dm.org/hex7c0/mongodb-restore-cli)
+[![NPM version](https://img.shields.io/npm/v/mongodb-restore-cli.svg)](https://www.npmjs.com/package/mongodb-restore-cli)
+[![Dependency Status](https://img.shields.io/david/hex7c0/mongodb-restore-cli.svg)](https://david-dm.org/hex7c0/mongodb-restore-cli)
 
 CLI for [`mongodb-restore`](https://github.com/hex7c0/mongodb-restore)
 
@@ -41,6 +41,6 @@ Options:
 
 ## Examples
 
-Take a look at my [examples](https://github.com/hex7c0/mongodb-restore-cli/tree/master/examples)
+Take a look at my [examples](examples)
 
-### [License GPLv3](http://opensource.org/licenses/GPL-3.0)
+### [License GPLv3](LICENSE)
