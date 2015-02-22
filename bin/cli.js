@@ -6,17 +6,15 @@ var VERSION = require('../package.json').version;
 var cli = require('cli');
 
 cli
-    .parse({
-      verbose: [ false, ' Save internal reporting into a logfile', 'file' ],
-      host: [ false, ' Specifies a resolvable hostname for the mongod',
-          'string' ],
-      parser: [ 'p', ' Data parser (bson, json)', 'string', 'bson' ],
-      out: [ 'o', ' Specifies the directory where get the backup', 'string',
-          './' ],
-      tar: [ 't', ' Extract files from a .tar file', 'string' ],
-      metadata: [ 'm', 'Set metadata of collections as Index, ecc' ],
-      version: [ 'v', 'Display the current version' ]
-    });
+.parse({
+  verbose: [ false, ' Save internal reporting into a logfile', 'file' ],
+  host: [ false, ' Specifies a resolvable hostname for the mongod', 'string' ],
+  parser: [ 'p', ' Data parser (bson, json)', 'string', 'bson' ],
+  out: [ 'o', ' Specifies the directory where get the backup', 'string', './' ],
+  tar: [ 't', ' Extract files from a .tar file', 'string' ],
+  metadata: [ 'm', 'Set metadata of collections as Index, ecc' ],
+  version: [ 'v', 'Display the current version' ]
+});
 
 cli.main(function(args, options) {
 
