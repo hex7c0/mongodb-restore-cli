@@ -1,3 +1,9 @@
+v0.1.0 / 2015-03-04
+==================
+
+  * Remove `peerDependencies` for npm@3
+  * Add "drop" (options)
+
 v0.0.3 / 2015-02-22
 ==================
 
