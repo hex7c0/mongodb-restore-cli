@@ -13,6 +13,7 @@ cli
   out: [ 'o', ' Specifies the directory where get the backup', 'string', './' ],
   tar: [ 't', ' Extract files from a .tar file', 'string' ],
   metadata: [ 'm', 'Set metadata of collections as Index, ecc' ],
+  drop: [ 'd', 'Drop every collection from the target database' ],
   version: [ 'v', 'Display the current version' ]
 });
 
@@ -35,6 +36,7 @@ cli.main(function(args, options) {
       tar: options.tar,
       logger: options.verbose,
       metadata: options.metadata,
+      drop:  options.drop,
       callback: function() {
 
         self.spinner('Working.. done\n', true);

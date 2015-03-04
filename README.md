@@ -35,6 +35,7 @@ Options:
   -o, --out [STRING]     Specifies the directory where get the backup (Default is ./)
   -t, --tar STRING       Extract files from a .tar file
   -m, --metadata         Set metadata of collections as Index, ecc
+  -d, --drop             Drop every collection from the target database
   -v, --version          Display the current version
   -h, --help             Display help and usage details
 ```
