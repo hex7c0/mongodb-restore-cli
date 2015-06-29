@@ -1,6 +1,8 @@
 # [mongodb-restore-cli](http://supergiovane.tk/#/mongodb-restore-cli)
 
 [![NPM version](https://img.shields.io/npm/v/mongodb-restore-cli.svg)](https://www.npmjs.com/package/mongodb-restore-cli)
+[![Linux Status](https://img.shields.io/travis/hex7c0/mongodb-restore-cli.svg?label=linux)](https://travis-ci.org/hex7c0/mongodb-restore-cli)
+[![Windows Status](https://img.shields.io/appveyor/ci/hex7c0/mongodb-restore-cli.svg?label=windows)](https://ci.appveyor.com/project/hex7c0/mongodb-restore-cli)
 [![Dependency Status](https://img.shields.io/david/hex7c0/mongodb-restore-cli.svg)](https://david-dm.org/hex7c0/mongodb-restore-cli)
 
 CLI for [`mongodb-restore`](https://github.com/hex7c0/mongodb-restore)
