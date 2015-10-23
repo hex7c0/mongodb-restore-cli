@@ -1,4 +1,4 @@
-# [mongodb-restore-cli](http://supergiovane.tk/#/mongodb-restore-cli)
+# [mongodb-restore-cli](https://github.com/hex7c0/mongodb-restore-cli)
 
 [![NPM version](https://img.shields.io/npm/v/mongodb-restore-cli.svg)](https://www.npmjs.com/package/mongodb-restore-cli)
 [![Linux Status](https://img.shields.io/travis/hex7c0/mongodb-restore-cli.svg?label=linux)](https://travis-ci.org/hex7c0/mongodb-restore-cli)
