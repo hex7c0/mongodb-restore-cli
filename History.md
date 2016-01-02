@@ -3,7 +3,7 @@ v0.2.3 / 2016-01-02
 
   * Test againt `node`@5
   * Update `cli`@0.11.1
-  * Use `mongodb-backup`@1.4.x
+  * Use `mongodb-restore`@1.4.x
 
 v0.2.2 / 2015-10-23
 ==================
