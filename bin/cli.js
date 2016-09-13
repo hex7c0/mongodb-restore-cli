@@ -6,19 +6,16 @@ var VERSION = require('../package.json').version;
 var cli = require('cli');
 var restore = require('mongodb-restore');
 
-cli
-    .parse({
-      verbose: [ false, ' Save internal reporting into a logfile', 'file' ],
-      host: [ false, ' Specifies a resolvable hostname for the mongod',
-        'string' ],
-      parser: [ 'p', ' Data parser (bson, json)', 'string', 'bson' ],
-      out: [ 'o', ' Specifies the directory where get the backup', 'string',
-        './' ],
-      tar: [ 't', ' Extract files from a .tar file', 'string' ],
-      metadata: [ 'm', 'Set metadata of collections as Index, ecc' ],
-      drop: [ 'd', 'Drop every collection from the target database' ],
-      version: [ 'v', 'Display the current version' ]
-    });
+cli.parse({
+  verbose: [ false, 'Save internal reporting into a logfile', 'file' ],
+  host: [ false, 'Specifies a resolvable hostname for the mongod', 'string' ],
+  parser: [ 'p', 'Data parser (bson, json)', 'string', 'bson' ],
+  out: [ 'o', 'Specifies the directory where get the backup', 'string', './' ],
+  tar: [ 't', 'Extract files from a .tar file', 'string' ],
+  metadata: [ 'm', 'Set metadata of collections as Index, ecc' ],
+  drop: [ 'd', 'Drop every collection from the target database' ],
+  version: [ 'v', 'Display the current version' ]
+});
 
 cli.setApp(process.title, VERSION).main(function(args, options) {
 
