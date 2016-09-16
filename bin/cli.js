@@ -6,15 +6,15 @@ var VERSION = require('../package.json').version;
 var cli = require('cli');
 var restore = require('mongodb-restore');
 
+cli.enable('timeout').enable('version');
 cli.parse({
   verbose: [ false, 'Save internal reporting into a logfile', 'file' ],
   host: [ false, 'Specifies a resolvable hostname for the mongod', 'string' ],
   parser: [ 'p', 'Data parser (bson, json)', 'string', 'bson' ],
   out: [ 'o', 'Specifies the directory where get the backup', 'string', './' ],
-  tar: [ 't', 'Extract files from a .tar file', 'string' ],
+  tar: [ 'r', 'Extract files from a .tar file', 'string' ],
   metadata: [ 'm', 'Set metadata of collections as Index, ecc' ],
   drop: [ 'd', 'Drop every collection from the target database' ],
-  version: [ 'v', 'Display the current version' ]
 });
 
 cli.setApp(process.title, VERSION).main(function(args, options) {
@@ -41,7 +41,7 @@ cli.setApp(process.title, VERSION).main(function(args, options) {
 
         if (err) {
           self.spinner('Working.. error\n', true);
-          self.error(err.message);
+          self.fatal(err.message);
         } else {
           self.spinner('Working.. done\n', true);
         }
@@ -49,6 +49,6 @@ cli.setApp(process.title, VERSION).main(function(args, options) {
     });
   } catch (e) {
     self.spinner('Working.. error\n', true);
-    self.error(e.message);
+    self.fatal(e.message);
   }
 });
