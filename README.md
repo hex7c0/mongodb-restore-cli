@@ -35,9 +35,10 @@ Options:
       --host STRING      Specifies a resolvable hostname for the mongod 
   -p, --parser [STRING]  Data parser (bson, json) (Default is bson)
   -o, --out [STRING]     Specifies the directory where get the backup (Default is ./)
-  -t, --tar STRING       Extract files from a .tar file
+  -r, --tar STRING       Extract files from a .tar file
   -m, --metadata         Set metadata of collections as Index, ecc
-  -d, --drop             Drop every collection from the target database
+  -d, --drop             Drop every collection from the target database 
+  -t, --timeout N        Exit if the process takes longer than N seconds
   -v, --version          Display the current version
   -h, --help             Display help and usage details
 ```
