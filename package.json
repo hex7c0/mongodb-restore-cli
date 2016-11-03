@@ -30,7 +30,7 @@
     "mongodb-restore": "./bin/cli.js"
   },
   "dependencies": {
-    "cli": "1.0.0",
+    "cli": "1.0.1",
     "mongodb-restore": "1.5.x"
   },
   "devDependencies": {
