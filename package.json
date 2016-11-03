@@ -31,7 +31,7 @@
   },
   "dependencies": {
     "cli": "1.0.1",
-    "mongodb-restore": "1.5.x"
+    "mongodb-restore": "1.6.x"
   },
   "devDependencies": {
     "mongodb-backup": "~1.6"
