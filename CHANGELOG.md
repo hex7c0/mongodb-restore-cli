@@ -1,3 +1,10 @@
+v0.5.0 / 2016-11-03
+==================
+
+  * Remove support for `node`@0
+  * Update `cli`@1.0.1
+  * Use `mongodb-restore`@1.6.x
+
 v0.4.1 / 2016-09-16
 ==================
 
